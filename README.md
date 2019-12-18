@@ -1,5 +1,5 @@
 # NthRewards
-Nth Rewards is a swift library of unique offer and loyalty platform, powered by NPCI, offering customers to redeem their accumulated loyalty points through various redemption options listed in the app/website
+Nth Rewards is a swift SDK of a unique offer and loyalty platform, powered by NPCI, offering customers to redeem their accumulated loyalty points through various redemption options listed in the app/website
 
 
 
