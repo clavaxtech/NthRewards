@@ -57,7 +57,7 @@ import NthRewards
 
 @IBAction func rewardButnClick(_ sender: Any) {
 
-   NthRewards.performSegueToFrameworkVC(caller: self)
+         NthRewards.performSegueToFrameworkVC(caller: self)
    
 }
 
