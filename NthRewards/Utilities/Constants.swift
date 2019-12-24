@@ -221,15 +221,8 @@ struct ScreenSize
 
 enum MultipleStoryBoards {
     
-    static let kSplashAndOnboardingSB = UIStoryboard(name: "Main", bundle: nil)
-    static let kHomeSB = UIStoryboard(name: "Home", bundle: nil)
-    static let kMenuSB = UIStoryboard(name: "Menu", bundle: nil)
-    static let kTutorialSB = UIStoryboard(name: "Tutorial", bundle: nil)
-    static let kGiftSB = UIStoryboard(name: "Gift", bundle: nil)
-    static let kShoppingCart = UIStoryboard(name: "ShopingCart", bundle: nil)
-    static let kDashboard = UIStoryboard(name: "Dashboard", bundle: nil)
-    static let kPayment = UIStoryboard(name: "Payment", bundle: nil)
-    static let kProduct = UIStoryboard(name: "Product", bundle: nil)
+    static let kNthRewardStoryboard = UIStoryboard(name: "NthRewardStoryboard", bundle: nil)
+    
     
 }
 

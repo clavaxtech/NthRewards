@@ -16,6 +16,9 @@
 		BAA9908223A35FDE0071F169 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = BAA9908123A35FDE0071F169 /* Utilities */; };
 		BAA9908423A362EF0071F169 /* NthRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9908323A362EF0071F169 /* NthRewards.swift */; };
 		BAA990A623A39A810071F169 /* NRSDKAppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA990A523A39A810071F169 /* NRSDKAppEvent.swift */; };
+		BAF2BE6E23ADFBA200838FA2 /* ProductFilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF2BE6C23ADFBA200838FA2 /* ProductFilterTableViewCell.xib */; };
+		BAF2BE6F23ADFBA200838FA2 /* ProductFilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2BE6D23ADFBA200838FA2 /* ProductFilterTableViewCell.swift */; };
+		BAF2BE7123ADFD9400838FA2 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2BE7023ADFD9400838FA2 /* ProductCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		BAA9908123A35FDE0071F169 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
 		BAA9908323A362EF0071F169 /* NthRewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthRewards.swift; sourceTree = "<group>"; };
 		BAA990A523A39A810071F169 /* NRSDKAppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRSDKAppEvent.swift; sourceTree = "<group>"; };
+		BAF2BE6C23ADFBA200838FA2 /* ProductFilterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductFilterTableViewCell.xib; sourceTree = "<group>"; };
+		BAF2BE6D23ADFBA200838FA2 /* ProductFilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFilterTableViewCell.swift; sourceTree = "<group>"; };
+		BAF2BE7023ADFD9400838FA2 /* ProductCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		E2240AE9C3CA33192C6929F3 /* Pods_NthRewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NthRewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40AA04E470DF8DE25843A90 /* Pods-NthRewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NthRewards.release.xcconfig"; path = "Target Support Files/Pods-NthRewards/Pods-NthRewards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +82,7 @@
 		BA9627BD23A353780090196B /* NthRewards */ = {
 			isa = PBXGroup;
 			children = (
+				BAF2BE6B23ADFB7A00838FA2 /* Product */,
 				BAA9908123A35FDE0071F169 /* Utilities */,
 				BAA9907F23A35F9C0071F169 /* Networking */,
 				BAA9907D23A35DF50071F169 /* Offers */,
@@ -87,6 +94,16 @@
 				BA3F213523A7915100D23771 /* Assets.xcassets */,
 			);
 			path = NthRewards;
+			sourceTree = "<group>";
+		};
+		BAF2BE6B23ADFB7A00838FA2 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2BE7023ADFD9400838FA2 /* ProductCategory.swift */,
+				BAF2BE6D23ADFBA200838FA2 /* ProductFilterTableViewCell.swift */,
+				BAF2BE6C23ADFBA200838FA2 /* ProductFilterTableViewCell.xib */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 		F36C95FC9EE590273763F821 /* Frameworks */ = {
@@ -171,6 +188,7 @@
 				BAA9908023A35F9C0071F169 /* Networking in Resources */,
 				BAA9908223A35FDE0071F169 /* Utilities in Resources */,
 				BA9627C823A354F00090196B /* NthRewardStoryboard.storyboard in Resources */,
+				BAF2BE6E23ADFBA200838FA2 /* ProductFilterTableViewCell.xib in Resources */,
 				BAA9907E23A35DF50071F169 /* Offers in Resources */,
 				BA3F213623A7915100D23771 /* Assets.xcassets in Resources */,
 			);
@@ -208,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF2BE6F23ADFBA200838FA2 /* ProductFilterTableViewCell.swift in Sources */,
 				BAA9908423A362EF0071F169 /* NthRewards.swift in Sources */,
 				BAA990A623A39A810071F169 /* NRSDKAppEvent.swift in Sources */,
+				BAF2BE7123ADFD9400838FA2 /* ProductCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

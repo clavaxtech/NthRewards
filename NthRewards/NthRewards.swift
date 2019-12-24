@@ -13,7 +13,6 @@ import UIKit
 public class NthRewards {
     
     public static func performSegueToFrameworkVC(caller: UIViewController) {
-        print("Testing")
         
         let podBundle = Bundle(for: OffersViewController.self)
         

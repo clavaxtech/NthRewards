@@ -158,6 +158,14 @@ extension UIImageView{
     
 }
 
+extension UIImage {
+    
+    class func getImage(ofName:String) -> UIImage? {
+        let bundle = Bundle(for: OffersViewController.self)
+        return UIImage(named: ofName, in: bundle, compatibleWith: nil)
+    }
+}
+
 
 extension UINavigationController
 {

@@ -113,10 +113,16 @@ nth Rewards is a unique offer and loyalty platform, powered by NPCI, offering cu
     ss.source_files = 'NthRewards/Offers'
     
     end
+
+
+    spec.subspec 'Product' do |ss|
+    ss.source_files = 'NthRewards/Product'
+    
+    end
    
 
 
-   spec.resource_bundles = {
+    spec.resource_bundles = {
     'NthRewards' => ['NthRewards/**/*.{storyboard,xib,xcassets,json,imageset,png}']
   }
 

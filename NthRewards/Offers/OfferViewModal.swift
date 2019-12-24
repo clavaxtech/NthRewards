@@ -91,7 +91,7 @@ class OfferViewModal: NSObject {
                 }else if service == . offers_byOfset{
                     self.handleOfferResponse(responseDict: dictData as! [String : Any])
                 }else if service == .offer_categories{
-                   // self.handleOfferCategoryResponse(responseDict: dictData as! [String : Any])
+                    self.handleOfferCategoryResponse(responseDict: dictData as! [String : Any])
                 }
                 
                 break
@@ -102,28 +102,28 @@ class OfferViewModal: NSObject {
         
     }
     
-//    func handleOfferCategoryResponse(responseDict : [String : Any]){
-//        do {
-//            let jsonData = try JSONSerialization.data(withJSONObject: responseDict)
-//            let objDecoder = JSONDecoder()
-//            let obj  = try objDecoder.decode(ProductCategory.self, from: jsonData)
-//
-//            if let categories = obj.data{
-//                self.filterCategories = categories.filter({ $0.category_type == OfferFilterKey.category.rawValue.lowercased()})
-//                self.filterArea = categories.filter({ $0.category_type == OfferFilterKey.area.rawValue.lowercased()})
-//            }
-//
-//
-//            self.filterSections.append(OfferFilterKey.category.rawValue)
-//            self.filterSections.append(OfferFilterKey.area.rawValue)
-//
-//
-//            self.bindingOfferViewModel?(obj, .offer_categories)
-//        }
-//        catch(let error){
-//            print("JSON Parsing Error >> \(error)")
-//        }
-//    }
+    func handleOfferCategoryResponse(responseDict : [String : Any]){
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: responseDict)
+            let objDecoder = JSONDecoder()
+            let obj  = try objDecoder.decode(ProductCategory.self, from: jsonData)
+            
+            if let categories = obj.data{
+                self.filterCategories = categories.filter({ $0.category_type == OfferFilterKey.category.rawValue.lowercased()})
+                self.filterArea = categories.filter({ $0.category_type == OfferFilterKey.area.rawValue.lowercased()})
+            }
+            
+            
+            self.filterSections.append(OfferFilterKey.category.rawValue)
+            self.filterSections.append(OfferFilterKey.area.rawValue)
+            
+            
+            self.bindingOfferViewModel?(obj, .offer_categories)
+        }
+        catch(let error){
+            print("JSON Parsing Error >> \(error)")
+        }
+    }
     
     func handleOfferResponse(responseDict : [String : Any]){
         do {

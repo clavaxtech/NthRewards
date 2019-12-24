@@ -69,6 +69,7 @@ class OffersViewController: UIViewController {
      }
      */
     private func initialSetup(){
+       
         
         self.noAvailableDataLabel.isHidden = true
         self.tempView1HeightConstant = self.view1HC.constant
@@ -87,9 +88,9 @@ class OffersViewController: UIViewController {
         }
         
         self.viewModal.bindingOfferViewModel = {(data:Any?, serviceType : Services) in
-            self.hideIndicater()
+            
             if serviceType == .offers_byOfset {
-                
+                self.hideIndicater()
                 DispatchQueue.main.async {
                     
                     if self.viewModal.DealOfTheDayOffersModalArray.count == 0 && self.viewModal.DiscountOffersModalArray.count == 0 && self.viewModal.allOffersModalArray.count == 0 {
@@ -200,24 +201,37 @@ class OffersViewController: UIViewController {
     
     private func moveToDetailViewController(offerCode : String?){
         
-        //        let offersDetailVC = MultipleStoryBoards.kHomeSB.instantiateViewController(withIdentifier: VCIdentifire.offerDetailViewController.rawValue) as! OfferDetailViewController
-        //        offersDetailVC.offerCode = offerCode
-        //        self.navigationController?.pushViewController(offersDetailVC, animated: true)
+        if let bundle = Utility.bundle(forView: OfferDetailViewController.self){
+            
+            let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
+            let vc : OfferDetailViewController = storyboard.instantiateViewController(withIdentifier: "OfferDetailViewController") as! OfferDetailViewController
+            vc.offerCode = offerCode
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
     }
     
     
     
     @IBAction func filterBtnClick(_ sender: Any) {
         
-        //        let vc = MultipleStoryBoards.kHomeSB.instantiateViewController(withIdentifier: VCIdentifire.offerFilterViewController.rawValue) as! OfferFilterViewController
-        //        vc.filterCategoryArray = self.viewModal.filterCategories
-        //        vc.filterAreaArray = self.viewModal.filterArea
-        //        vc.filterSectionArray = self.viewModal.filterSections
-        //
-        //        vc.selectedCotegories = self.selectedCategories
-        //        vc.selectedArea = self.selectedArea
-        //        vc.delegate = self
-        //        self.present(vc, animated: true, completion: nil)
+        guard self.viewModal.filterCategories.count != 0 else{return}
+        
+        if let bundle = Utility.bundle(forView: OfferFilterViewController.self){
+            
+            let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
+            let vc = storyboard.instantiateViewController(withIdentifier: VCIdentifire.offerFilterViewController.rawValue) as! OfferFilterViewController
+            vc.filterCategoryArray = self.viewModal.filterCategories
+            vc.filterAreaArray = self.viewModal.filterArea
+            vc.filterSectionArray = self.viewModal.filterSections
+            vc.selectedCotegories = self.selectedCategories
+            vc.selectedArea = self.selectedArea
+            vc.delegate = self
+            self.present(vc, animated: true, completion: nil)
+            
+        }
+        
     }
     
     
@@ -346,34 +360,34 @@ extension OffersViewController : UICollectionViewDelegateFlowLayout, UICollectio
 }
 
 
-//extension OffersViewController : OfferFilterViewControllerDelegate{
-//    func apply(withCategories categories: Set<String>, withArea area: Set<String>) {
-//        Utility.printLog(messge: "\(categories) && \(area)")
-//
-//        if categories.count > 0 || area.count > 0{
-//            self.selectedCategories = categories
-//            self.selectedArea = area
-//            self.viewModal.clearAllData()
-//            self.resetUIInterface()
-//            self.getOffers()
-//        }else if self.selectedCategories.count > 0 || self.selectedArea.count > 0  &&  categories.count == 0 && area.count == 0 {
-//            self.selectedCategories = []
-//            self.selectedArea = []
-//            self.viewModal.clearAllData()
-//            self.resetUIInterface()
-//            self.getOffers()
-//        }
-//    }
-//
-//    func clearFilter() {
-//
-//        if self.selectedCategories.count > 0 || self.selectedArea.count > 0{
-//            self.selectedCategories = []
-//            self.selectedArea = []
-//            self.viewModal.clearAllData()
-//            self.resetUIInterface()
-//            self.getOffers()
-//        }
-//
-//    }
-//}
+extension OffersViewController : OfferFilterViewControllerDelegate{
+    func apply(withCategories categories: Set<String>, withArea area: Set<String>) {
+        Utility.printLog(messge: "\(categories) && \(area)")
+        
+        if categories.count > 0 || area.count > 0{
+            self.selectedCategories = categories
+            self.selectedArea = area
+            self.viewModal.clearAllData()
+            self.resetUIInterface()
+            self.getOffersFromAPI()
+        }else if self.selectedCategories.count > 0 || self.selectedArea.count > 0  &&  categories.count == 0 && area.count == 0 {
+            self.selectedCategories = []
+            self.selectedArea = []
+            self.viewModal.clearAllData()
+            self.resetUIInterface()
+            self.getOffersFromAPI()
+        }
+    }
+    
+    func clearFilter() {
+        
+        if self.selectedCategories.count > 0 || self.selectedArea.count > 0{
+            self.selectedCategories = []
+            self.selectedArea = []
+            self.viewModal.clearAllData()
+            self.resetUIInterface()
+            self.getOffersFromAPI()
+        }
+        
+    }
+}

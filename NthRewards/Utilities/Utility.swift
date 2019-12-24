@@ -194,6 +194,22 @@ class Utility  {
         
     }
     
+    class func bundle(forView  : AnyClass?) -> Bundle?{
+        
+        assert(forView != nil, "View can't be nil")
+        
+        let podBundle = Bundle(for: forView!)
+        
+        let bundleURL = podBundle.url(forResource: "NthRewards", withExtension: "bundle")
+        if let bundle = Bundle(url: bundleURL!){
+            return bundle
+        }else{
+            return nil
+        }
+        
+        
+    }
+    
     
 }
 

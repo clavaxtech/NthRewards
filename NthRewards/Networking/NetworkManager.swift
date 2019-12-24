@@ -17,9 +17,9 @@ final class NetworkManager: NSObject {
     
     private override init() {}
     
-    
-    
     fileprivate var msg = String()
+    
+    
     
     func callApiService(serviceType: Services, parameters: [String: Any], successClosure: @escaping callBack) {
         
@@ -204,7 +204,7 @@ final class NetworkManager: NSObject {
             //                successClosure("Something went wrong", .fail)
             //                return
             //            }
-            let customerId = ""
+            let customerId = "CUS31673340"
             
             guard let offerCode = parameters["code"] as? String else {
                 return
