@@ -69,7 +69,7 @@ class OffersViewController: UIViewController {
      }
      */
     private func initialSetup(){
-       
+        
         
         self.noAvailableDataLabel.isHidden = true
         self.tempView1HeightConstant = self.view1HC.constant
@@ -200,7 +200,7 @@ class OffersViewController: UIViewController {
     }
     
     private func moveToDetailViewController(offerCode : String?){
-        
+        Utility.printLog(messge: "Move to detail view controller")
         if let bundle = Utility.bundle(forView: OfferDetailViewController.self){
             
             let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
@@ -215,10 +215,12 @@ class OffersViewController: UIViewController {
     
     
     @IBAction func filterBtnClick(_ sender: Any) {
-        
+        Utility.printLog(messge: "Filter button click precondtion")
         guard self.viewModal.filterCategories.count != 0 else{return}
-        
+        Utility.printLog(messge: "Filter button click test pass")
         if let bundle = Utility.bundle(forView: OfferFilterViewController.self){
+            
+            Utility.printLog(messge: "Bundle -------> \(bundle)")
             
             let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
             let vc = storyboard.instantiateViewController(withIdentifier: VCIdentifire.offerFilterViewController.rawValue) as! OfferFilterViewController
