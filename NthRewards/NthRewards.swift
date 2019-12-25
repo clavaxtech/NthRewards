@@ -14,6 +14,8 @@ public class NthRewards {
     
     public static func performSegueToFrameworkVC(caller: UIViewController) {
         
+        print("Testing version 1.0.1")
+        
         let podBundle = Bundle(for: OffersViewController.self)
         
         let bundleURL = podBundle.url(forResource: "NthRewards", withExtension: "bundle")
