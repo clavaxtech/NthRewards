@@ -23,9 +23,12 @@ public class NthRewards {
         
         let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
         
-        let vc = storyboard.instantiateViewController(withIdentifier: "OffersViewController")
-        caller.navigationController?.pushViewController(vc, animated: true)
+        //        let vc = storyboard.instantiateViewController(withIdentifier: "OffersViewController")
+        //        caller.navigationController?.pushViewController(vc, animated: true)
         
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+        caller.navigationController?.pushViewController(vc, animated: true)
         
     }
     

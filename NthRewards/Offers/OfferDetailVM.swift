@@ -56,7 +56,7 @@ class OfferDetailVM {
             case .sucess:
                 
                 if service == .token {
-    
+                    
                 }else if service == .offers_detail{
                     self.handleOfferDetailResponse(responseDict: dictData as! [String : Any])
                 }

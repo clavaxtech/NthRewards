@@ -127,7 +127,7 @@ final class NetworkManager: NSObject {
             //                successClosure("Something went wrong", .fail)
             //                return
             //            }
-            let customerId = ""
+             let customerId  = "CUS31673340"
             stringURL = "\(Base.URL)Offers/Customer/" + customerId + "?$filters=tags%20in%20offers:points"
             self.callGetApiService(stringUrl: stringURL, serviceType: serviceType) { (dictData, ResponseStatus) in
                 successClosure(dictData, ResponseStatus)

@@ -35,7 +35,7 @@ class OfferInfoStepsViewController: UIViewController {
      */
     
     func initialInit(){
-      
+        
         
         if let text = typo {
             if let htmlData = text.htmlToAttributedString {

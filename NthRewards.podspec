@@ -114,6 +114,11 @@ nth Rewards is a unique offer and loyalty platform, powered by NPCI, offering cu
     
     end
 
+    spec.subspec 'Core' do |ss|
+    ss.source_files = 'NthRewards/Core'
+    
+    end
+
 
     spec.subspec 'Product' do |ss|
     ss.source_files = 'NthRewards/Product'
@@ -167,9 +172,11 @@ nth Rewards is a unique offer and loyalty platform, powered by NPCI, offering cu
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-    spec.dependency "Alamofire"
+    spec.dependency "Alamofire" , "~> 4.8.0"
     spec.dependency "FittedSheets"
     spec.dependency "SDWebImage"
+     spec.dependency "SkyFloatingLabelTextField"
+spec.dependency "DatePickerDialog"
 
     spec.swift_version = "4.2"
 

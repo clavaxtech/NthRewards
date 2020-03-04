@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DE90EF8E4BAE1B71D8ACDE5 /* Pods_NthRewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2240AE9C3CA33192C6929F3 /* Pods_NthRewards.framework */; };
+		BA000D9B240D07D2004E2AD0 /* Core in Resources */ = {isa = PBXBuildFile; fileRef = BA000D9A240D07D2004E2AD0 /* Core */; };
 		BA3F213623A7915100D23771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3F213523A7915100D23771 /* Assets.xcassets */; };
 		BA9627C023A353780090196B /* NthRewards.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9627BE23A353780090196B /* NthRewards.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA9627C823A354F00090196B /* NthRewardStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9627C723A354F00090196B /* NthRewardStoryboard.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3D82C81CEBF0BD9E2262F1A3 /* Pods-NthRewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NthRewards.debug.xcconfig"; path = "Target Support Files/Pods-NthRewards/Pods-NthRewards.debug.xcconfig"; sourceTree = "<group>"; };
+		BA000D9A240D07D2004E2AD0 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = "<group>"; };
 		BA3F213523A7915100D23771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA9627BB23A353780090196B /* NthRewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NthRewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9627BE23A353780090196B /* NthRewards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NthRewards.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		BA9627BD23A353780090196B /* NthRewards */ = {
 			isa = PBXGroup;
 			children = (
+				BA000D9A240D07D2004E2AD0 /* Core */,
 				BAF2BE6B23ADFB7A00838FA2 /* Product */,
 				BAA9908123A35FDE0071F169 /* Utilities */,
 				BAA9907F23A35F9C0071F169 /* Networking */,
@@ -190,6 +193,7 @@
 				BA9627C823A354F00090196B /* NthRewardStoryboard.storyboard in Resources */,
 				BAF2BE6E23ADFBA200838FA2 /* ProductFilterTableViewCell.xib in Resources */,
 				BAA9907E23A35DF50071F169 /* Offers in Resources */,
+				BA000D9B240D07D2004E2AD0 /* Core in Resources */,
 				BA3F213623A7915100D23771 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

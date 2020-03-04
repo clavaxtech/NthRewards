@@ -6,8 +6,10 @@ target 'NthRewards' do
   use_frameworks!
 
   # Pods for NthRewards
-    pod 'Alamofire'
+    # pod 'Alamofire'
+    pod 'Alamofire', '~> 4.8.0'
     pod 'SDWebImage'
     pod 'FittedSheets'
-
+     pod 'SkyFloatingLabelTextField'
+     pod 'DatePickerDialog'
 end
