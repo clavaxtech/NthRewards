@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w78-Oq-io5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w78-Oq-io5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -773,7 +773,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2y-KN-RTd">
-                                <rect key="frame" x="0.0" y="78" width="375" height="519"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gsj-0Z-FEH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -785,7 +785,7 @@
                                 </label>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAl-Qg-ANf">
-                                <rect key="frame" x="307" y="20" width="48" height="48"/>
+                                <rect key="frame" x="331" y="20" width="24" height="24"/>
                                 <state key="normal" image="cross_image"/>
                                 <connections>
                                     <action selector="dismissFilter:" destination="9wJ-nK-40M" eventType="touchUpInside" id="xcX-5A-jtM"/>
@@ -3828,16 +3828,16 @@ vouchers to start ordering</string>
                                                     <rect key="frame" x="8" y="5" width="359" height="47"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="offer_redeem_process" translatesAutoresizingMaskIntoConstraints="NO" id="7WF-iO-qe4">
-                                                            <rect key="frame" x="20" y="-8.5" width="64" height="64"/>
+                                                            <rect key="frame" x="20" y="7.5" width="32" height="32"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer Redeem Process" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-nO-xBM">
-                                                            <rect key="frame" x="114" y="15.5" width="180" height="16.5"/>
+                                                            <rect key="frame" x="82" y="15.5" width="219.5" height="16.5"/>
                                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                             <color key="textColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="arrow_forward" translatesAutoresizingMaskIntoConstraints="NO" id="aao-jb-nLI">
-                                                            <rect key="frame" x="324" y="11.5" width="15" height="24"/>
+                                                            <rect key="frame" x="331.5" y="17.5" width="7.5" height="12"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4014,7 +4014,7 @@ vouchers to start ordering</string>
         <!--Gift View Controller-->
         <scene sceneID="tLz-A7-Fnp">
             <objects>
-                <viewController storyboardIdentifier="GiftViewController" id="Blz-Kz-9g9" customClass="GiftViewController" customModule="nth_Rewards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GiftViewController" id="Blz-Kz-9g9" customClass="GiftViewController" customModule="NthRewards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9is-qR-nvv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4038,7 +4038,7 @@ vouchers to start ordering</string>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftBannerCollectionViewCell" id="BGA-Fm-SYY" customClass="GiftBannerCollectionViewCell" customModule="nth_Rewards" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftBannerCollectionViewCell" id="BGA-Fm-SYY" customClass="GiftBannerCollectionViewCell" customModule="NthRewards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="-0.5" width="375" height="161"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -4109,7 +4109,7 @@ vouchers to start ordering</string>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftListing0CollectionViewCell" id="dVP-Uz-HDH" customClass="GiftListing0CollectionViewCell" customModule="nth_Rewards" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftListing0CollectionViewCell" id="dVP-Uz-HDH" customClass="GiftListing0CollectionViewCell" customModule="NthRewards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="1" width="189" height="172"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -4222,7 +4222,7 @@ vouchers to start ordering</string>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftListing1CollectionViewCell" id="wj6-22-Kp8" customClass="GiftListing1CollectionViewCell" customModule="nth_Rewards" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftListing1CollectionViewCell" id="wj6-22-Kp8" customClass="GiftListing1CollectionViewCell" customModule="NthRewards" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="168" height="157"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -4334,12 +4334,258 @@ vouchers to start ordering</string>
             </objects>
             <point key="canvasLocation" x="8.8000000000000007" y="214.54272863568218"/>
         </scene>
+        <!--Register View Controller-->
+        <scene sceneID="3SF-TC-hdh">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="WkD-3N-Czk" customClass="RegisterViewController" customModule="nth_Rewards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87t-na-zzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="MC8-V0-tRn">
+                                <rect key="frame" x="30" y="30" width="32" height="32"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9HI-YR-4N8" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="30" y="112" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LkA-LV-nPo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" textContentType="tel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Mobile Number"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Enter Mobile Number"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" red="0.95294117649999999" green="0.47843137250000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" red="0.95294117649999999" green="0.47843137250000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWK-wV-Ca2" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="30" y="182" width="315" height="50"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartInsertDeleteType="no" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Create Password"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Create Password"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" red="0.95294117649999999" green="0.47843137250000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" red="0.95294117649999999" green="0.47843137250000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68b-2X-u0b">
+                                <rect key="frame" x="325" y="198" width="20" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="E1P-Ty-zRJ"/>
+                                    <constraint firstAttribute="height" constant="34" id="zLS-lB-uOX"/>
+                                </constraints>
+                                <state key="normal" image="eye_closed"/>
+                                <state key="selected" image="eye_open"/>
+                                <connections>
+                                    <action selector="eyeButtonClick:" destination="WkD-3N-Czk" eventType="touchUpInside" id="czT-FJ-xSd"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qpB-Gt-1kx">
+                                <rect key="frame" x="30" y="262" width="287.5" height="26"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kC-Jl-oX7">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="26"/>
+                                        <state key="normal" image="check_unselected"/>
+                                        <state key="selected" image="check_selected"/>
+                                        <connections>
+                                            <action selector="termsButtonClick:" destination="WkD-3N-Czk" eventType="touchUpInside" id="DIX-s2-gyg"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6JI-11-EKU">
+                                        <rect key="frame" x="29" y="0.0" width="258.5" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gr-xV-alH">
+                                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="26"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0KR-q9-pnw">
+                                                <rect key="frame" x="51.5" y="0.0" width="105" height="26"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Terms &amp; Conditions">
+                                                            <attributes>
+                                                                <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="NSColor" red="0.15294117647058825" green="0.22352941176470587" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" metaFont="user"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="termsAndConditionBtnClick:" destination="WkD-3N-Czk" eventType="touchUpInside" id="03k-bD-AYd"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I34-la-N77">
+                                                <rect key="frame" x="159.5" y="0.0" width="21" height="26"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7td-1J-ML0">
+                                                <rect key="frame" x="183.5" y="0.0" width="75" height="26"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Privacy Policy">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.15294117647058825" green="0.22352941176470587" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" metaFont="user"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="privacyPolicyBtnClick:" destination="WkD-3N-Czk" eventType="touchUpInside" id="bXC-im-sn7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UmW-MC-s1A">
+                                <rect key="frame" x="30" y="328" width="315" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edq-Id-gBS">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8dX-EN-iJl">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signupButtonClick:" destination="WkD-3N-Czk" eventType="touchUpInside" id="UN3-fx-Ya1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt6-6w-XcW">
+                                        <rect key="frame" x="0.0" y="60" width="315" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fxM-NY-KsJ">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1529411765" green="0.22352941179999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonClick:" destination="WkD-3N-Czk" eventType="touchUpInside" id="BJT-C9-wpx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qpB-Gt-1kx" firstAttribute="leading" secondItem="XWK-wV-Ca2" secondAttribute="leading" id="8RI-7B-FaL"/>
+                            <constraint firstItem="MC8-V0-tRn" firstAttribute="leading" secondItem="95T-oj-KCL" secondAttribute="leading" constant="30" id="AoN-dF-I1u">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="XWK-wV-Ca2" firstAttribute="leading" secondItem="9HI-YR-4N8" secondAttribute="leading" id="ECU-t5-23i"/>
+                            <constraint firstItem="MC8-V0-tRn" firstAttribute="top" secondItem="95T-oj-KCL" secondAttribute="top" constant="30" id="IgI-oI-D5s">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="XWK-wV-Ca2" firstAttribute="trailing" secondItem="9HI-YR-4N8" secondAttribute="trailing" id="Mif-R4-NW6"/>
+                            <constraint firstItem="qpB-Gt-1kx" firstAttribute="top" secondItem="XWK-wV-Ca2" secondAttribute="bottom" constant="30" id="NC5-Mu-D4u">
+                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                            </constraint>
+                            <constraint firstItem="UmW-MC-s1A" firstAttribute="leading" secondItem="9HI-YR-4N8" secondAttribute="leading" id="OBG-vE-ojc"/>
+                            <constraint firstItem="XWK-wV-Ca2" firstAttribute="top" secondItem="9HI-YR-4N8" secondAttribute="bottom" constant="20" id="Rqs-X4-Aua">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="UmW-MC-s1A" firstAttribute="trailing" secondItem="9HI-YR-4N8" secondAttribute="trailing" id="YOU-7S-q2d"/>
+                            <constraint firstItem="9HI-YR-4N8" firstAttribute="leading" secondItem="95T-oj-KCL" secondAttribute="leading" constant="30" id="Yi5-XB-ybS">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="68b-2X-u0b" firstAttribute="bottom" secondItem="XWK-wV-Ca2" secondAttribute="bottom" id="bkI-GS-6Ey"/>
+                            <constraint firstItem="UmW-MC-s1A" firstAttribute="top" secondItem="qpB-Gt-1kx" secondAttribute="bottom" constant="40" id="eo6-uX-JNX">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="XWK-wV-Ca2" firstAttribute="height" secondItem="9HI-YR-4N8" secondAttribute="height" id="fq8-AX-4fc"/>
+                            <constraint firstItem="95T-oj-KCL" firstAttribute="trailing" secondItem="9HI-YR-4N8" secondAttribute="trailing" constant="30" id="hmM-Sf-aiV">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="68b-2X-u0b" firstAttribute="trailing" secondItem="XWK-wV-Ca2" secondAttribute="trailing" id="ihd-6N-EAG"/>
+                            <constraint firstItem="9HI-YR-4N8" firstAttribute="top" secondItem="MC8-V0-tRn" secondAttribute="bottom" constant="50" id="jhM-Zk-oI4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="95T-oj-KCL"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="createPasswordTextField" destination="XWK-wV-Ca2" id="AHc-Lo-Uq4"/>
+                        <outlet property="eyeButton" destination="68b-2X-u0b" id="nMt-va-ydI"/>
+                        <outlet property="noTextField" destination="9HI-YR-4N8" id="Bod-OZ-4NK"/>
+                        <outlet property="termsButton" destination="6kC-Jl-oX7" id="3g7-6R-Q6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAD-1Y-ac3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="554.57271364317842"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow_forward" width="7.5" height="12"/>
         <image name="cashback" width="16" height="16"/>
+        <image name="check_selected" width="24" height="24"/>
+        <image name="check_unselected" width="24" height="24"/>
         <image name="cross_image" width="24" height="24"/>
+        <image name="eye_closed" width="16" height="16"/>
+        <image name="eye_open" width="16" height="16"/>
         <image name="filter" width="20" height="20"/>
+        <image name="logo" width="16" height="16"/>
         <image name="myOrder_empty" width="16" height="16"/>
         <image name="offer_redeem_process" width="32" height="32"/>
         <image name="radio_selected" width="16" height="16"/>

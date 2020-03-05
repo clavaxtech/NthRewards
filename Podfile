@@ -10,6 +10,6 @@ target 'NthRewards' do
     pod 'Alamofire', '~> 4.8.0'
     pod 'SDWebImage'
     pod 'FittedSheets'
-     pod 'SkyFloatingLabelTextField'
-     pod 'DatePickerDialog'
+    pod 'SkyFloatingLabelTextField'
+    pod 'DatePickerDialog'
 end

@@ -24,6 +24,7 @@ class HomeViewController: BaseViewController {
     
     
     //Anurag changes
+    // 
     
     @IBOutlet var baseScrollView: UIScrollView!
     
@@ -327,14 +328,14 @@ class HomeViewController: BaseViewController {
     
     
     private func handleDidLeftMenuItemClick(atRow : Int){
-        
+          print("get go")
         switch atRow {
         case 0:
-            
-            if let bundle = Utility.bundle(forView: MyAccountViewController.self){
+            print("get registred")
+            if let bundle = Utility.bundle(forView: RegisterViewController.self){
                 
                 let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
-                let vc : MyAccountViewController = storyboard.instantiateViewController(withIdentifier: "MyAccountViewController") as! MyAccountViewController
+                let vc : RegisterViewController = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
                 
                 self.navigationController?.pushViewController(vc, animated: true)
                 
