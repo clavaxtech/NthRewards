@@ -13,6 +13,10 @@ struct ActivityLogModal : Codable {
     //Testing
     //Testing
     
+    
+    
+    
+    
     var data : [Logs]?
     var message : String?
     var totalCount : Int?

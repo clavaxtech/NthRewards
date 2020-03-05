@@ -22,6 +22,9 @@ class MenuOptionsCollectionCell : UICollectionViewCell{
 
 class HomeViewController: BaseViewController {
     
+    
+    //Anurag changes
+    
     @IBOutlet var baseScrollView: UIScrollView!
     
     @IBOutlet var menuOptionsCollectionView: UICollectionView!

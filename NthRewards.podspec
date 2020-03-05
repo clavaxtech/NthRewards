@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NthRewards"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "nth Rewards is a unique offer and loyalty platform, powered by NPCI, offering customers to redeem their accumulated loyalty points through various redemption options listed in the app/website."
 
   # This description is used to generate tags and improve search results.
