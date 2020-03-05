@@ -61,6 +61,7 @@ class ActivityLogViewController: UIViewController {
         self.viewModal.bindingActivityLogViewModel = {(data:Any?, serviceType : Services) in
             //self.hideHud()
             //Hello testing
+            
             switch serviceType {
             case .activityLog:
                 
