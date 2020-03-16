@@ -332,6 +332,8 @@ class HomeViewController: BaseViewController {
         switch atRow {
         case 0:
             print("get registred")
+                //here is new changes
+            
             if let bundle = Utility.bundle(forView: RegisterViewController.self){
                 
                 let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
