@@ -24,7 +24,7 @@ class HomeViewController: BaseViewController {
     
     
     //Anurag changes
-    // 
+    // Anurg chnages and
     
     @IBOutlet var baseScrollView: UIScrollView!
     
@@ -335,7 +335,7 @@ class HomeViewController: BaseViewController {
             if let bundle = Utility.bundle(forView: RegisterViewController.self){
                 
                 let storyboard = UIStoryboard(name: "NthRewardStoryboard", bundle: bundle)
-                let vc : RegisterViewController = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+                let vc : MyAccountViewController = storyboard.instantiateViewController(withIdentifier: "MyAccountViewController") as! MyAccountViewController
                 
                 self.navigationController?.pushViewController(vc, animated: true)
                 
