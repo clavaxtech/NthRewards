@@ -20,7 +20,7 @@ use_frameworks!
 
 platform :ios, '9.0'
 
-pod 'NthRewards', :git => 'https://github.com/clavaxtech/NthRewards.git', :tag => '1.0.0'
+pod 'NthRewards', :git => 'https://github.com/clavaxtech/NthRewards.git', :tag => '1.0.9'
 
 end
 
